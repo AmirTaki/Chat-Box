@@ -70,3 +70,13 @@ body {
     background-color: #5a5a5a;
     transform: scale(1.05);
 }
+
+.user-message {
+    text-align: right;
+}
+
+.user-message .chat-message-text{
+    background-color: #5a5a5a;
+    color: white;
+    
+}
