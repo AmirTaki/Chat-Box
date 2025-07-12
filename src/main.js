@@ -13,3 +13,10 @@ const responses = {
     ],
 
 }
+
+sendButton.addEventListener("click", ()=> {
+    if(input.value !== ""){
+        const message = document.createElement('div');
+        message.classList.add('chat-message', 'user-message')      
+    }  
+})
