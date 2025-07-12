@@ -18,7 +18,7 @@ sendButton.addEventListener("click", ()=> {
     if(input.value !== ""){
         const message = document.createElement('div');
         message.classList.add('chat-message', 'user-message')     
-        message.innerHTML `<div class = "chat-message-text">${input.value}</div>` 
+        message.innerHTML  = `<div class = "chat-message-text">${input.value}</div>` 
         messageList.appendChild(message)
 
         input.addEventListener('keyup', (e)=>{
@@ -38,7 +38,9 @@ sendButton.addEventListener("click", ()=> {
         setTimeout(() => {
             const randomIndex = Math.floor(Math.random() * responses[intent].length);
             const responsesText = responses[intent][randomIndex]
-            const botMessage = document.createElement('')
+            const botMessage = document.createElement('div')
+            botMessage.classList.add('chat-message', 'bot-message')
+            botMessage.innerHTML = `<div class = "chat-message-text">${responsesText}</div>` 
         })
     }  
 
