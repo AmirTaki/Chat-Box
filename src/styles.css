@@ -2,3 +2,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f7f7f7;
 }
+
+.chat-container {
+    width : 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow : 0 0 10px rgba(0, 0, 0, .3)   
+}
