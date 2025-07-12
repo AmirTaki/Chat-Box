@@ -26,10 +26,13 @@ sendButton.addEventListener("click", ()=> {
                 sendButton.click();
             }
         })
-        const intputText = input.value.toLowerCase();
+        const inputText = input.value.toLowerCase();
         let intent = "Default" 
-        if(input.includes("hello") || input.text.includes(hi)){
+        if(inputText.includes("hello") || inputText.includes("hi")){
             intent =  "Greeting"
+        }
+        else if (inputText.includes("bye") || inputText.includes('goodbye')){
+            intent = "Farewell"
         }
     }  
 
