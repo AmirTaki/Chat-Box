@@ -41,7 +41,11 @@ sendButton.addEventListener("click", ()=> {
             const botMessage = document.createElement('div')
             botMessage.classList.add('chat-message', 'bot-message')
             botMessage.innerHTML = `<div class = "chat-message-text">${responsesText}</div>` 
-        })
+            messageList.appendChild(botMessage)
+
+            messageList.scrollTop = messageList.scrollHeight;
+
+        }, 1000)
     }  
 
 })
