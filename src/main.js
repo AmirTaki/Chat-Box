@@ -22,8 +22,12 @@ sendButton.addEventListener("click", ()=> {
         messageList.appendChild(message)
 
         input.addEventListener('keyup', (e)=>{
-            
+            if(e.key === "Enter") {
+                sendButton.click();
+            }
         })
+        const intputText = input.value.toLowerCase();
+        let intent = "Default" 
     }  
 
 })
