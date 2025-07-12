@@ -11,6 +11,9 @@ const responses = {
       "Good bye!",
       "Bye! Have a great day!",  
     ],
+    Default : [
+       "I'm afrid I don't have an answer for that. Can you try asking something else?", 
+    ],
 
 }
 
