@@ -14,7 +14,10 @@ const responses = {
     Default : [
        "I'm afrid I don't have an answer for that. Can you try asking something else?", 
     ],
-
+    Joke : [
+        "Why did the tomato turn red? Because it saw the salad dressing!",
+        "How do you organize a space party? You planet.",
+    ],
 }
 
 sendButton.addEventListener("click", ()=> {
@@ -36,6 +39,9 @@ sendButton.addEventListener("click", ()=> {
         }
         else if (inputText.includes("bye") || inputText.includes('goodbye')){
             intent = "Farewell"
+        }
+        else if (inputText.includes("joke") ){
+            intent = "Joke"
         }
         input.value = "";
         setTimeout(() => {
