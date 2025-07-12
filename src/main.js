@@ -17,6 +17,9 @@ const responses = {
     Joke : [
         "Why did the tomato turn red? Because it saw the salad dressing!",
         "How do you organize a space party? You planet.",
+        "Why don't scientists trust atoms? Because they  make up everything.",
+        "Why did the coffee file a police report? It got mugged.",
+        "Why did the scarecrow win an award? Because he was outstanding in his field.",
     ],
 }
 
@@ -53,7 +56,6 @@ sendButton.addEventListener("click", ()=> {
             messageList.appendChild(botMessage)
 
             messageList.scrollTop = messageList.scrollHeight;
-
         }, 1000)
     }  
 
