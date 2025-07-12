@@ -17,6 +17,13 @@ const responses = {
 sendButton.addEventListener("click", ()=> {
     if(input.value !== ""){
         const message = document.createElement('div');
-        message.classList.add('chat-message', 'user-message')      
+        message.classList.add('chat-message', 'user-message')     
+        message.innerHTML `<div class = "chat-message-text">${input.value}</div>` 
+        messageList.appendChild(message)
+
+        input.addEventListener('keyup', (e)=>{
+            
+        })
     }  
+
 })
