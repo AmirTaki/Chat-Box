@@ -91,3 +91,7 @@ body {
         opacity: 1;
     }
 }
+
+.chat-message {
+    animation: chat-message-po .5s ease-in-out;
+}
