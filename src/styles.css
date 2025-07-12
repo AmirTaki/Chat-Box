@@ -78,5 +78,16 @@ body {
 .user-message .chat-message-text{
     background-color: #5a5a5a;
     color: white;
-    
+
+}
+
+@keyframes chat-message-pop {
+    0%{
+        transform: translateY(40%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
