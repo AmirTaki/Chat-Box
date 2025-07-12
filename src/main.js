@@ -34,6 +34,12 @@ sendButton.addEventListener("click", ()=> {
         else if (inputText.includes("bye") || inputText.includes('goodbye')){
             intent = "Farewell"
         }
+        input.value = "";
+        setTimeout(() => {
+            const randomIndex = Math.floor(Math.random() * responses[intent].length);
+            const responsesText = responses[intent][randomIndex]
+            const botMessage = document.createElement('')
+        })
     }  
 
 })
